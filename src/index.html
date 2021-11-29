@@ -12,17 +12,29 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid-center">
+      <div class="jumbotron text-center p-4 mt-5" style="height: 375px;">
+        <h1 class="display-4">What happened today?</h1>
+        <hr class="my-4" />
+        <h3 id="excuse">
+          <img
+            src="https://media1.giphy.com/media/12E6e2Eh0Fq87K/giphy.gif?cid=790b76111d449b402b8a29f00885a8671455d0ca47b2181a&rid=giphy.gif"
+            style="height: 50px;"
+            id="img"
+          />Dread Pirate Roberts ate the pope at the dmv.
+        </h3>
+        <img
+          src="https://media.giphy.com/media/1qktVRi0xWSxQZnzPI/giphy.gif"
+          style="width: 200px; transform: scaleX(-1);"
+        />
+        <button onClick="window.location.reload();">Refresh Page</button>
+        <form onSubmit="return addingWho()">
+          <p>Please insert the items</p>
+          <input type="text" id="box" />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </div>
   </body>
